@@ -1,0 +1,46 @@
+THINGS IVE LEARNED
+
+16/01/01 (yy/mm/dd)
+
+First day of getting refamiliar with Git. I've been using all the commands during my courses without much understanding. That ends today!
+
+Q: 
+	When using cmd line to initialize my new repo, I got the fatal error of not specifying the upstream source. So I looked into it!
+A:
+	Downstream: the local copy of a repo, cloned or checkedout
+	Upstream: is the remote server that you push to and pull from
+
+Q: 
+	What is the difference between clone and pull?
+A: 	
+	clone creates a copy of a remote repo on your local system
+	while pull updates what you cloned
+		additionally, pull is short for fetch & merge
+
+Tmrw: take a better look at the git-cheatsheet and the differences between the worskpace, index, local and remote repos [http://ndpsoftware.com/git-cheatsheet.html#loc=workspace;]
+
+
+16/01/02
+
+Having set the upstream location, git pull automatically pulls, rather than needing to specifiy a location. Cool!
+
+git reset --hard <remote>/<branch>: is a hard reset to be used in failed merge crisis
+
+The Stream:
+	workspace: where the local files are stored and worked on
+	$ add: adds working file to index
+	$ status / diff: displays updated files and those with differences from the index
+	index: listing of files that were 'added' from workspace to index, aka staging
+	$ commit: adds staged/index files to the local repo
+	local repo: the .git folder, that is basically a copy of the remote repo
+	$ push: sends updates from local to remote repo
+	remote repo: the server
+
+$ checkout <branch>: switches workspace and index to specified branch
+	I'm assuming from this, that only 1 branch is active at any time
+$ checkout -b <new branch>: creates and sets a new workspace branch
+
+From this link [http://justinhileman.info/article/git-pretty/git-pretty.png], it seems like 'pushing' and 'pulling' frequently is only required if there are frequent updates to the remote repo (from other ppl)
+Otherwise, I can just add/commit to my local repo during the day, and still have the opportunity to use all of git's features live revert, branch, etc
+
+Oh, another note, do not use [git commit] without a [-m "msg"] unless you want to screw with vim...

@@ -1,0 +1,98 @@
+Web Development Notes
+
+Front end is what the client sees
+	Their browser interprets the files sent and displays the results
+Back end is what the server runs
+	It provides the files
+
+Domain name - a url that gets converted to ISP
+Domain Name System (DNS) - lets you manage your domain name and WHOIS info, mail servers, etc
+Domain Name Registrar (DNR) - maintains, sells, and regulates DNs
+Web-Hosting - the computer where the server and files are kept
+Web server - the program that delivers files
+Site files - the files that are run or served 
+Web application - an app, or program, run thru the browser
+	prevents the need to install software
+	ex: webmail, online retail, wikis, IMS
+	typically a SPA
+		vs a typical dynamic/interactive website
+Single Page Application (SPA)
+
+
+LAMP vs MEAN vs RoR
+	Server 	= 	Apache 	vs 	Node
+	Storage = 	MySQL 	vs 	MongoDB
+	Code 	= 	PHP 	vs 	Express+Angular
+
+Express acts as controller, directing application flow and marshalling data
+Angular handles data presentation
+
+Node
+	is all JS
+	non-blocking
+		can send function call and keep going
+	but requires callbacks
+		cant WAIT for return value
+		so put next step as function call on success
+	npm = node packacge manager
+
+
+
+
+NODE TUTORIAL
+http://www.tutorialspoint.com/nodejs/
+	installed nodejs
+	hello world
+		create js file in sublime
+		console.log("text")
+		run from console with $ node file.js
+	my first app/server
+		js file used to listen (on port) for requests
+		and send back responses
+		run from console to start server
+		can then use browser to visit
+	npm - package manager
+		$ npm <un>install <package> <-g>
+		local installs accessible in script via require()
+		global installs only used in CLI
+		$ npm ls <-g>
+			check which packages are installed
+	callbacks
+		node is built with callbacks in mind
+		asynchronous function, called at completion of a task
+		execution is NOT BLOCKED by function call
+		no blocking for I/O facilitates scaling
+			can have many requests backed up, but each client is still executing in the meantime
+		any async function accepts a callback as a last parameter
+		and the callback function accepts error as a first parameter
+	event loop
+		nodejs is single threaded
+		but async function calls maintain concurrency
+		events are similar to callbacks, but use observer pattern
+		eventemitter fires event, passing it to handler, and continues listening
+	buffers
+		required to handle binary data, raw data
+			like TCP streams or file systems
+	streams
+		continuous reads/writes
+			can be read/write/both
+		are eventemitters
+			data - when data is available to read
+			end - when there is no more data to read
+			error
+			finish - when all data has been flushed
+		pipe - read in with one stream while writing out with another
+		chain - pipe results of one function directly into next function
+	filesystems
+		all fs functions can be sync or async
+		async functions include, as last param, a callback completion function, whose first param is error, then data
+			fs.func(param1,callback(err,data){...});
+		fs.open(path,flags,callback)
+			flags for read/write/append
+		fs.stat(path,callback(err,stats))
+		fs.writeFile(filename,data,options,callback)
+			will create and/or overwrite
+		fs.read(fd, buffer, offset, length, position, callback)
+			used to read a FD, not file name
+
+what is difference between file readstream, readFile, open(r)
