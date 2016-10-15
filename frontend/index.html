@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Front End Test</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<link href="css/index.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<div id="stage">
+
+			<div id="stage-header"><table class="full-width"><tr>
+				<td class="text-left">
+					<div class="inline">
+						<img src="css/organical_logo.png">
+						<h4><b>Organical</b></h4>
+					</div>
+				</td>
+				<td class="text-right">
+					<p>Contact Support</p>
+				</td>
+			</tr></table></div>
+
+			<table id="stage-title">
+				<tr><td>
+					<img src="css/leaf.png" id="leaf">
+					<h1>Get your organic food <b>for Free</b></h1>
+				</td></tr>
+				<tr><td>
+					<h5 class="orange text-uppercase"><b>Fast &bull; Safe &bull; Delicious</b></h5>
+				</td></tr>
+			</table>
+
+			<table id="stagemid"><tr>
+				<td class="stage-cell">
+					<img id="basket" src="css/basket.png" class="img-responsive">
+				</td>
+				<td><!-- spacer --></td>
+				<td class="stage-cell" id="signup">
+					<h3 style="color:#038a7a; line-height:1.5em;">Give us a <b>FREE</b> try!</h3>
+					<p>Signup Now to get your <b>free</b> shipment of Organic Food!</p>
+					<form>
+						<div class="form-group">
+							<label for="inputemail">Email address (Case Sensitive)</label>
+							<input type="email" class="form-control" id="inputemail">
+						</div>
+						<div class="form-group">
+							<label for="inputpassword">Password (+6 Characters)</label>
+							<input type="password" class="form-control" id="inputpassword">
+						</div>
+						<h6><a href="#" id="existinguser">Existing users please enter here</a></h6>
+						<div class="text-right">
+							<button id="btnsignup" class="btn-std" type="button">Signup Now | <span class="glyphicon glyphicon-arrow-right"></span></button>
+						</div>
+						<div class="grey small text-left">We value your privacy. We will not sell or rent your email address to third parties. See our <a href="#">Terms & Conditions</a> and <a href="#"> Privacy Policy</a> or more details.</div>
+					</form>
+				</td>
+			</tr></table>
+
+			<table class="full-width text-center"><tr>
+				<td class="point-cell" style="background-color:#056572">
+					<img src="css/chemical.png">Free of chemicals</td>
+				<td class="point-cell" style="background-color:#f45c07">
+					<img src="css/truck.png">No shipping costs within Canada</td>
+				<td class="point-cell" style="background-color:#038a7a">
+					<img src="css/gear.png">Cancel your account at any time, no hassles</td>
+			</tr></table>
+
+		</div>
+
+		<div id="content" class="container-fluid">
+
+			<div class="row text-center">
+				<div class="col-md-12"><h1>Choose your Free Trial Package</h1></div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-4 col-md-offset-1">
+					<br><br>
+					<h4 class="orange text-uppercase"><b>free trial</b></h4>
+					<br>
+					<h3>Natural Fruits and Vegetables</h3>
+					<br>
+					<p class="grey text-content">Ensure your body is stocked with nutritious fruits and vegetables. We take care of your food, while you live your life to the fullest.</p>
+					<a href="#" id="learnmore">Learn More</a>
+					<br><br>
+					<div class="inline">
+						<img src="css/greens.png">
+						<button class="btn-std btn-get-started" type="button">Get Started Now</button>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-md-offset-2">
+				<br><br>
+					<h4 class="orange text-uppercase"><b>free trial</b></h4>
+					<br>
+					<h3>Organicaly fed protein products</h3>
+					<br>
+					<p class="grey text-content">Ensure your body is stocked with protein-high and savory products, such as cheeses and raw meat. We take care of your food, while you live your life to the fullest.</p>
+					<a href="#" id="learnmore">Learn More</a>
+					<br><br>
+					<div class="inline">
+						<img src="css/meats.png">
+						<button class="btn-std btn-get-started" type="button">Get Started Now</button>
+					</div>
+				</div>
+
+			</div>
+
+			<br><br>
+
+			<div class="row text-center" id="space-this">
+				<div class="col-md-12"><h1>What We Do Best</h1></div>
+			</div>
+
+			<div class="row text-center" id="whatwedo">
+				<div class="col-md-4">
+					<img src="css/heart.png">
+					<br><br>
+					<h3>Healthy</h3>
+					
+					<p class="grey text-content">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+				</div>
+				<div class="col-md-4 ">
+					<img src="css/like.png">
+					<br><br>
+					<h3>Happy</h3>
+					<p class="grey text-content">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+				</div>
+				<div class="col-md-4">
+					<img src="css/leaf2.png">
+					<br><br>
+					<h3>Beautiful</h3>
+					<p class="grey text-content">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="text-center" id="footer">
+			<h3>Start eating healthy now. Give us a try.</h3>
+			<br>
+			<h4>You can call us any time 24/7 at 1-888-888-8888</h4>
+			<br><br>
+			<button id="btneat" class="btn-std" type="button"><h4>Eat Healthy</h4></button>
+		</div>
+
+	</body>
+</html>
