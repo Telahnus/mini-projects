@@ -1,4 +1,3 @@
 # mini-projects
-Repo for experimentation and testing on mini projects
-
-I hope to make contributions tracker completely green by 2017
+Repo for experimentation and testing on mini projects.
+ex: following tutorials/guide, experimenting with CSS, etc
